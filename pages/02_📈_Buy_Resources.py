@@ -1,5 +1,6 @@
 
 import pandas as pd
+import plotly
 import plotly.graph_objs as go
 import streamlit as st
 from bs4 import BeautifulSoup
@@ -10,11 +11,11 @@ from plotly.subplots import make_subplots
 import altair as alt
 import pandas as pd
 import streamlit as st
-import plotly
+
 import plotly.graph_objects as go
 import plotly.express as px
 import streamlit.components.v1 as components
-import pros
+#import pros
 
 inventory = pros.inventory()
 coal = inventory["coal"]
