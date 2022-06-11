@@ -30,7 +30,7 @@ def inventory():
     rss = lands[land]
     loc = gpsConvert(coords)
     url = "https://wax.greymass.com/v1/chain/get_table_rows"
-    data = '{"json":true,"code":"prospectorsn","scope":"prospectorsn","table":"loc","lower_bound":"'+loc+'","upper_bound":null,"index_position":1,"key_type":"","limit":"1",>
+    data = '{"json":true,"code":"prospectorsn","scope":"prospectorsn","table":"loc","lower_bound":"'+loc+'","upper_bound":null,"index_position":1,"key_type":"","limit":"1","reverse":false,"show_payer":false}'
     storage = requests.get(url,data=data).json()['rows'][0]['storage']
     for s in storage:
       if s["type_id"] == rss_num[rss]:
