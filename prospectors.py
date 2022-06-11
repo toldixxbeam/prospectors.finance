@@ -3,7 +3,7 @@ import requests
 import time
 import configparser
 import json
-import streamlit
+import streamlit as st
 
 def inventory():
   def gpsConvert(xandy):
