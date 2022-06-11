@@ -29,7 +29,7 @@ def inventory():
     loc = str(((x*65536)+y))
     return loc
   lands = configparser.ConfigParser()
-  lands.read('lands.ini')
+  lands.read('./lands.ini')
   lands = lands["LANDS"]
   rss_num = {'coal':4,
           'clay':5,
