@@ -10,6 +10,7 @@ from plotly.subplots import make_subplots
 import altair as alt
 import pandas as pd
 import streamlit as st
+import plotly
 import plotly.graph_objects as go
 import plotly.express as px
 import streamlit.components.v1 as components
