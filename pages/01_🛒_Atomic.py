@@ -11,7 +11,7 @@ listing_select = st.radio('Select one:', ['Currently Listed', 'Sales History'])
 list_dict = {'Currently Listed': 1, 'Sales History': 3}
 listing_status = list_dict[listing_select]
 
-url = 'https://wax.api.atomicassets.io/atomicmarket/v1/sales?state='+str(listing_status)+'&collection_name=prospectorsa&schema_name=grandland&page=1&limit=100&order=desc>
+url = 'https://wax.api.atomicassets.io/atomicmarket/v1/sales?state='+str(listing_status)+'&collection_name=prospectorsa&schema_name=grandland&page=1&limit=100&order=desc&sort=updated'
 
 response = requests.get(url).json()['data']
 price = []
