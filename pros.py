@@ -1,4 +1,3 @@
-  GNU nano 4.8                                                                       pros.py
 import requests
 import time
 import configparser
