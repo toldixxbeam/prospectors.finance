@@ -55,7 +55,7 @@ def alcor(token):
     return last_price
 
 
-inventory = pros.inventory()
+inventory = inventory()
 st.set_page_config(
     page_title="Prospectors",
     page_icon="chart_with_upwards_trend",
