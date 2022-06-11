@@ -16,15 +16,6 @@ import plotly.graph_objects as go
 import plotly.express as px
 import streamlit.components.v1 as components
 #import pros
-
-inventory = inventory()
-coal = inventory["coal"]
-clay = inventory["clay"]
-ore  = inventory["ore"]
-stock = f"{coal} kg coal \n{clay} kg clay \n{ore} kg ore"
-st.sidebar.title("Resources Currently In Stock")
-st.sidebar.text(stock)
-
 def inventory():
   def gpsConvert(xandy):
     x = xandy.split("/")[0]
@@ -59,6 +50,16 @@ def inventory():
         rss_avail = round(rss_amount/3)
         all_rss[rss]+=rss_avail
   return all_rss
+
+
+inventory = inventory()
+coal = inventory["coal"]
+clay = inventory["clay"]
+ore  = inventory["ore"]
+stock = f"{coal} kg coal \n{clay} kg clay \n{ore} kg ore"
+st.sidebar.title("Resources Currently In Stock")
+st.sidebar.text(stock)
+
 
 def itemList():
     url = 'http://prospectors.online/grand/trades/deals-stats.html'
