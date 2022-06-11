@@ -176,7 +176,7 @@ with c:
                 buy = st.form_submit_button("Generate Invoice")
                 if buy:
                     if buy_item and buy_amount > 0 and customer_wax and customer_loc and customer_tg:
-                        url = 'https://docs.google.com/forms/d/e/1FAIpQLScQu5ewcim8magdlXWGlidN1aLJRRJipWxxQddWxMa8dI0BLQ/viewform?usp=pp_url&entry.2056394064='+str(buy_item)+'&entry.1426332526='+str(buy_amount)+'&entry.9>
+                        url = 'https://docs.google.com/forms/d/e/1FAIpQLScQu5ewcim8magdlXWGlidN1aLJRRJipWxxQddWxMa8dI0BLQ/viewform?usp=pp_url&entry.2056394064='+str(buy_item)+'&entry.1426332526='+str(buy_amount)+'&entry.948927672='+str(customer_wax)+'&entry.1197930162='+str(customer_loc)+'&entry.1634629381='+str(customer_tg)+'&entry.1556280284='+str(buy_total)
 
                         st.write(f"Click the link to complete purchace [BUY NOW]({url})")
                     else:
